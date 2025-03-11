@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ function Course() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/book`);
         console.log(res.data);
         setBook(res.data);
       } catch (error) {
@@ -25,13 +25,7 @@ function Course() {
             <span className="text-pink-500"> Here! :)</span>
           </h1>
           <p className="mt-12">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-            assumenda? Repellendus, iste corrupti? Tempore laudantium
-            repellendus accusamus accusantium sed architecto odio, nisi expedita
-            quas quidem nesciunt debitis dolore non aspernatur praesentium
-            assumenda sint quibusdam, perspiciatis, explicabo sequi fugiat amet
-            animi eos aut. Nobis quisquam reiciendis sunt quis sed magnam
-            consequatur!
+          This heartfelt message is a warm expression of gratitude to users for choosing your bookstore services. It conveys genuine appreciation for their presence and trust in your platform, whether they are browsing, purchasing books, or exploring your collection. By using this message, you create a welcoming and friendly atmosphere, making users feel valued and special. It reflects your commitment to providing a positive experience and reinforces the idea that your bookstore is more than just a place to buy books—it's a community where readers are celebrated. This message can be displayed on your website, app, or even in email communications to thank users for their support and encourage them to continue engaging with your services.
           </p>
           <Link to="/">
             <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
@@ -42,7 +36,7 @@ function Course() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
           {book.map((item) => (
             <Cards key={item.id} item={item} />
-          ))}
+          ))}Lorem
         </div>
       </div>
     </>

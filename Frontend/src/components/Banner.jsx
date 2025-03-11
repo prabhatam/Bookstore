@@ -12,9 +12,7 @@ function Banner() {
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
             <p className="text-sm md:text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+            This heartfelt message is a warm expression of gratitude to users for choosing your bookstore services. It conveys genuine appreciation for their presence and trust in your platform, whether they are browsing, purchasing books, or exploring your collection. By using this message, you create a welcoming and friendly atmosphere, making users feel valued and special. It reflects your commitment to providing a positive experience and reinforces the idea that your bookstore is more than just a place to buy books—it's a community where readers are celebrated. This message can be displayed on your website, app, or even in email communications to thank users for their support and encourage them to continue engaging with your services.
             </p>
             <label className="input input-bordered flex items-center gap-2">
               <svg
