@@ -26,6 +26,9 @@ const connectDb = async()=>{
     }
 }
 
+app.get("/",(req,res)=>{
+    return res.status(200).json({"Bookstore Server Status":"Connected"})
+})
 
 // defining routes
 app.use("/book", bookRoute);
